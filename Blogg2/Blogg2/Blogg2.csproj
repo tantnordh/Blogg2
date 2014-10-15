@@ -46,11 +46,14 @@
     <Compile Include="Comment.cs" />
     <Compile Include="CreateTestEntries.cs" />
     <Compile Include="Entry.cs" />
-    <Compile Include="Menu.cs" />
+    <Compile Include="Menu\HandleStartMenuChoice.cs" />
+    <Compile Include="Menu\HandleMainMenuChoice.cs" />
+    <Compile Include="Menu\MenuMain.cs" />
+    <Compile Include="Menu\MenuStart.cs" />
     <Compile Include="Post.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RunBlogProgram.cs" />
+    <Compile Include="BlogProgram.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -10,7 +10,12 @@ namespace Blogg2
 	{
 		static void Main(string[] args)
 		{
-			RunBlogProgram.Run();
+			Console.Clear();
+			ColorScheme.General();
+			Console.WindowHeight = Console.WindowHeight * 3 / 2;
+
+			List<Blog> blogs = new List<Blog>();
+			BlogProgram.Run(blogs);
 		}
 	}
 }
