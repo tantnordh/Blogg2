@@ -11,7 +11,7 @@ namespace Blogg2
 		public static void Show()
 		{
 			Console.Clear();
-			ColorScheme.Header1("START MENU");
+			ColorScheme.Header1("start menu");
 			Console.WriteLine();
 			ColorScheme.General();
 			Console.WriteLine("(1) Create new blog");

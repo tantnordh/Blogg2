@@ -52,7 +52,10 @@ namespace Blogg2
 
 		private static Blog CreateBlog()
 		{
-			Console.WriteLine("Namnge din nya blogg: ");
+			Console.Clear();
+			ColorScheme.Header1("new blog");
+			Console.WriteLine();
+			Console.WriteLine("Name your blog: ");
 			Blog blog = new Blog(Console.ReadLine());
 			Console.Title = blog.Name;
 

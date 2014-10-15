@@ -14,6 +14,7 @@ namespace Blogg2
 		{
 			return _chosenBlog;
 		}
+
 		public static void BlogChooser(List<Blog> blogs)
 		{
 			int chosenBlogNumber;
