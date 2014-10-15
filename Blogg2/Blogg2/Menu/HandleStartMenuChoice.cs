@@ -38,8 +38,8 @@ namespace Blogg2
 					break;
 
 				case 2:
-					MenuBlogList();
-					Blog blogChoice = GetBlogChoice();
+					MenuListOfBlogs.Show(_blogs);
+					Blog blogChoice = HandleChoiceOfBlog.GetChosenBlog(_blogs);
 					MainMenu.RunMenu(blogChoice);
 					break;
 
@@ -47,37 +47,6 @@ namespace Blogg2
 					Environment.Exit(0);
 					break;
 			}
-		}
-
-		private static Blog GetBlogChoice()
-		{
-			int chosenBlogNumber;
-			while (!int.TryParse(Console.ReadLine(), out chosenBlogNumber) || chosenBlogNumber < 0 || chosenBlogNumber > _blogs.Count)
-			{
-				Console.WriteLine("Please try with an integer 0-" + _blogs.Count + ".");
-			}
-
-			if (chosenBlogNumber != 0)
-			{
-				return _blogs.Where(b => _blogs.IndexOf(b) == chosenBlogNumber - 1).Single();
-			}
-
-			return null;
-		}
-
-		private static void MenuBlogList()
-		{
-			Console.Clear();
-			ColorScheme.Header1("Your blogs");
-			Console.WriteLine();
-
-			int i;
-			for (i = 0; i < _blogs.Count; i++)
-			{
-				Console.WriteLine("(" + (i + 1) + ") " + _blogs[i].Name);
-			}
-			Console.WriteLine("(" + i + ") ");
-			Console.WriteLine("(0) Quit");
 		}
 
 		private static Blog CreateBlog()

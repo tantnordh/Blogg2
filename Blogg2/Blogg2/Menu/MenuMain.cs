@@ -13,13 +13,13 @@ namespace Blogg2
 			int choice = -1;
 			while (choice != 0 && blog != null)
 			{
-				ShowMenu();
+				Show();
 				HandleMainMenuChoice.HandleChoice(blog);
 				HandleMainMenuChoice.GetChoice();
 			}
 		}
 
-		private static void ShowMenu()
+		private static void Show()
 		{
 			Console.Clear();
 			ColorScheme.Header1("Main Menu");
