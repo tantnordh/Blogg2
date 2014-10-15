@@ -39,8 +39,9 @@ namespace Blogg2
 
 				case 2:
 					MenuListOfBlogs.Show(_blogs);
-					Blog blogChoice = HandleChoiceOfBlog.GetChosenBlog(_blogs);
-					MainMenu.RunMenu(blogChoice);
+					HandleChoiceOfBlog.BlogChooser(_blogs);
+					Blog chosenBlog = HandleChoiceOfBlog.GetChosenBlog();
+					MainMenu.RunMenu(chosenBlog);
 					break;
 
 				case 0:
