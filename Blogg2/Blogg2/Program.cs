@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Blogg2
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            BLA BLA BLA
-        }
-    }
+	class Program
+	{
+		static void Main(string[] args)
+		{
+			RunBlogProgram.Run();
+		}
+	}
 }
+
