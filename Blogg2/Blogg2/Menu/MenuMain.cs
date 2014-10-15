@@ -8,17 +8,13 @@ namespace Blogg2
 {
 	public static class MainMenu
 	{
-		private static Blog _blog;
-
 		public static void RunMenu(Blog blog)
 		{
-			_blog = blog;
-
 			int choice = -1;
 			while (choice != 0 && blog != null)
 			{
 				ShowMenu();
-				HandleMainMenuChoice.HandleChoice();
+				HandleMainMenuChoice.HandleChoice(blog);
 				HandleMainMenuChoice.GetChoice();
 			}
 		}

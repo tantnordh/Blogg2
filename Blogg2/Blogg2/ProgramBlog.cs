@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Blogg2
 {
-	public static class BlogProgram
+	public static class ProgramBlog
 	{
 		private static List<Blog> _blogs;
 

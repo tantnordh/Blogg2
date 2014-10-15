@@ -15,7 +15,7 @@ namespace Blogg2
 			Console.WindowHeight = Console.WindowHeight * 3 / 2;
 
 			List<Blog> blogs = new List<Blog>();
-			BlogProgram.Run(blogs);
+			ProgramBlog.Run(blogs);
 		}
 	}
 }

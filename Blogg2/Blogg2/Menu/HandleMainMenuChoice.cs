@@ -15,7 +15,7 @@ namespace Blogg2
 			return _choice;
 		}
 
-		public static void HandleChoice()
+		public static void HandleChoice(Blog blog)
 		{
 			Console.WriteLine("Choose an alternative: ");
 			int choice;
@@ -53,7 +53,7 @@ namespace Blogg2
 					break;
 
 				case 7:
-					BlogProgram.Run(BlogProgram.GetBlogList());
+					ProgramBlog.Run(ProgramBlog.GetBlogList());
 					break;
 
 				case 0:

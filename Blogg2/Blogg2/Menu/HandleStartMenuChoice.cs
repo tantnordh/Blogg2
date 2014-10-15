@@ -38,7 +38,7 @@ namespace Blogg2
 					break;
 
 				case 2:
-					ShowBlogList();
+					MenuBlogList();
 					Blog blogChoice = GetBlogChoice();
 					MainMenu.RunMenu(blogChoice);
 					break;
@@ -65,16 +65,18 @@ namespace Blogg2
 			return null;
 		}
 
-		private static void ShowBlogList()
+		private static void MenuBlogList()
 		{
 			Console.Clear();
 			ColorScheme.Header1("Your blogs");
 			Console.WriteLine();
-			for (int i = 0; i < _blogs.Count; i++)
+
+			int i;
+			for (i = 0; i < _blogs.Count; i++)
 			{
 				Console.WriteLine("(" + (i + 1) + ") " + _blogs[i].Name);
 			}
-			Console.WriteLine();
+			Console.WriteLine("(" + i + ") ");
 			Console.WriteLine("(0) Quit");
 		}
 
